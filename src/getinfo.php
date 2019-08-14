@@ -11,11 +11,11 @@
     mysqli_query($con,"set names 'utf8'");
 
     $info1=mysqli_query($con,"select * from datamessage order by time desc");
-    $index=8;       //需要获取的消息数目
+    $index=16;       //需要获取的消息数目
     $arr=array();
     while($row=mysqli_fetch_assoc($info1))
     {
-        $arr[$index."time"]=substr($row['time'],14,5);
+        $arr[$index."time"]=$row['time'];
         $arr[$index."wendu"]=$row['wendu'];
         $arr[$index."shidu"]=$row['shidu'];
         $arr[$index."guangzhao"]=$row['guangzhao'];
