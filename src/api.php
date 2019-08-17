@@ -646,19 +646,19 @@
   }
   //执行对应的命令
   switch ($operation) {
-    case 'setpqs':        //设置排气扇开关
+    case 'setpqsswitch':        //设置排气扇开关
       SetPQSSwitch($user,$pqs_switch,$con);
       break;
-    case 'setzgl':        //设置遮光帘开关
+    case 'setzglswitch':        //设置遮光帘开关
       SetZGLSwitch($user,$zgl_switch,$con);
       break;
-    case 'setgg':         //设置灌溉开关
+    case 'setggswitch':         //设置灌溉开关
       SetGGSwitch($user,$gg_switch,$con);
       break;
-    case 'setbgd':        //设置补光灯开关
+    case 'setbgdswitch':        //设置补光灯开关
       SetBGDSwitch($user,$bgd_switch,$con);
       break;
-    case 'setswitch':     //设置所有开关
+    case 'setallswitch':     //设置所有开关
       SetAllSwitch($user,$pqs_switch,$zgl_switch,$gg_switch,$bgd_switch,$con);
       break;
     case 'setip':         //设置ip
